@@ -20,6 +20,42 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		echo "welcpme index";
+		// $search = $_GET['q'];
+		// $ch = curl_init();
+
+		// // $search = $_GET['SEARCH_QUERY'];
+
+		// curl_setopt($ch, CURLOPT_URL,'https://api.iconbolt.com/search?q='. urlencode($search));
+		// curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+
+
+		// $result = curl_exec($ch);
+
+		// curl_close($ch);
+
+		// $response = json_decode($result);
+		// echo $result;
+		// $responseString = json_encode($response, JSON_PRETTY_PRINT);
+		// header('Content-Type: application/json');
+
+		// if (is_array($response)) {
+		// 	$response = json_encode($response);
+		// }
+		// echo $response;
+		//  echo $responseString;
+		// echo "<pre>";
+		// echo $response;
+		// exit();
+		// echo "<pre>";
+		//var_dump($response);
+		// echo $response;
+		// exit();
 	}
+
+	public function api(){
+		$this->load->view('new');
+	}
+
+
 }
