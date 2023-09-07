@@ -87,9 +87,9 @@ class Auth extends CI_Controller {
             else{
                 $data['error'] ='Invalid information, Enter the correct data';
                 $this->load->view('login',$data);
-                echo "Email: " . $data['email'] . "<br>";
-                echo "Password: " . $data['password'] . "<br>";
-                echo "Hashed Password from Database: " . $user->password . "<br>"; // Display the hashed password from the database
+                // echo "Email: " . $data['email'] . "<br>";
+                // echo "Password: " . $data['password'] . "<br>";
+                // echo "Hashed Password from Database: " . $user->password . "<br>"; // Display the hashed password from the database
             }
         }
     }
@@ -99,6 +99,15 @@ class Auth extends CI_Controller {
     }
     public function dashboard(){
         $this->load->view('dashboard');
+    }
+
+    public function texteditor(){
+        $this->load->view('texteditor');
+        
+    }
+
+    public function json(){
+        $this->load->view('jsonrte');
     }
 
 }
